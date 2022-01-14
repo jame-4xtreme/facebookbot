@@ -3,7 +3,11 @@
 $access_token = 'EAADj4kk3X5ABAAl9rLrX7lBO0fjBfLrOIOqhFwHcYzAfbZBvWw40l6ja88PHpPhZAcrs6rZC2RusZBDL8CCVWlZCW0xloIiy4xBuZBpZBgtkKZBI7d3bCClgZC5Vp18qsxEJywK8gPN9klMuV0eh152GlzuNmf50b8AAC8M18yQtw1xVxBZC2CJ2klQNDykARnMxWZCN6czU98YdQZDZD';
 
 /* validate verify token needed for setting up web hook */ 
-echo 'Facebook bot 1549 ****************************************************************************';
+echo 'Facebook bot 1611 ****************************************************************************';
+
+
+/* validate verify token needed for setting up web hook */ 
+
 if (isset($_GET['hub_verify_token'])) { 
     if ($_GET['hub_verify_token'] === $access_token) {
         echo $_GET['hub_challenge'];
@@ -51,3 +55,4 @@ if (isset($input['entry'][0]['messaging'][0]['sender']['id'])) {
         $result = curl_exec($ch); // user will get the message
     }
 }
+

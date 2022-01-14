@@ -4,7 +4,7 @@ $access_token = 'EAADj4kk3X5ABAAl9rLrX7lBO0fjBfLrOIOqhFwHcYzAfbZBvWw40l6ja88PHpP
 
 /* validate verify token needed for setting up web hook */ 
 echo 'Facebook bot ****************************************************************************';
-
+error_log("Facebook bot ****************************************************************************");
 if (isset($_GET['hub_verify_token'])) { 
     if ($_GET['hub_verify_token'] === $access_token) {
         echo $_GET['hub_challenge'];

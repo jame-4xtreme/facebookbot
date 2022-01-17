@@ -3,7 +3,7 @@
 $access_token = 'EAADj4kk3X5ABAAl9rLrX7lBO0fjBfLrOIOqhFwHcYzAfbZBvWw40l6ja88PHpPhZAcrs6rZC2RusZBDL8CCVWlZCW0xloIiy4xBuZBpZBgtkKZBI7d3bCClgZC5Vp18qsxEJywK8gPN9klMuV0eh152GlzuNmf50b8AAC8M18yQtw1xVxBZC2CJ2klQNDykARnMxWZCN6czU98YdQZDZD';
 
 /* validate verify token needed for setting up web hook */ 
-echo 'Facebook bot 1611 ****************************************************************************';
+echo 'Facebook bot 0910 ****************************************************************************';
 
 
 /* validate verify token needed for setting up web hook */ 
@@ -32,7 +32,7 @@ if (isset($input['entry'][0]['messaging'][0]['sender']['id'])) {
     $sender = $input['entry'][0]['messaging'][0]['sender']['id']; //sender facebook id
     $message = $input['entry'][0]['messaging'][0]['message']['text']; //text that user sent
 
-    $url = 'https://graph.facebook.com/v2.6/me/messages?access_token='. $access_token;
+    $url = 'https://graph.facebook.com/v12.0/me/messages?access_token='. $access_token;
 
     /*initialize curl*/
     $ch = curl_init($url);
